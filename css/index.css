@@ -1,0 +1,260 @@
+/* 通用样式 begin*/
+body{
+	color: #000;
+	font-family: "microsoft yahei";
+}
+a:focus{
+	text-decoration: none;
+	
+}
+ul,ol{
+	list-style: none;
+}
+/*设置字体 */
+@font-face {
+    font-family: lk;
+    src: url('../fonts/lk.eot') format('embedded-opentype'),
+    url('../fonts/lk.svg') format('svg'),
+    url('../fonts/lk.ttf') format('truetype'),
+    url('../fonts/lk.woff') format('woff');
+}
+/* 按钮定制 */
+.btn-success { 
+	color: #ffffff; 
+	background-color: #6D44A3; 
+	border-color: #130269; 
+  } 
+   
+  .btn-success:hover, 
+  .btn-success:focus, 
+  .btn-success:active, 
+  .btn-success.active, 
+  .open .dropdown-toggle.btn-success { 
+	color: #ffffff; 
+	background-color: #49247A; 
+	border-color: #130269; 
+  } 
+   
+  .btn-success:active, 
+  .btn-success.active, 
+  .open .dropdown-toggle.btn-success { 
+	background-image: none; 
+  } 
+   
+  .btn-success.disabled, 
+  .btn-success[disabled], 
+  fieldset[disabled] .btn-success, 
+  .btn-success.disabled:hover, 
+  .btn-success[disabled]:hover, 
+  fieldset[disabled] .btn-success:hover, 
+  .btn-success.disabled:focus, 
+  .btn-success[disabled]:focus, 
+  fieldset[disabled] .btn-success:focus, 
+  .btn-success.disabled:active, 
+  .btn-success[disabled]:active, 
+  fieldset[disabled] .btn-success:active, 
+  .btn-success.disabled.active, 
+  .btn-success[disabled].active, 
+  fieldset[disabled] .btn-success.active { 
+	background-color: #6D44A3; 
+	border-color: #130269; 
+  } 
+   
+  .btn-success .badge { 
+	color: #6D44A3; 
+	background-color: #ffffff; 
+  }
+/* 通用样式 end*/
+
+/* 头部 begin*/
+#lk_header{
+  height: 50px;
+  line-height: 49px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#lk_header>div>div>div{
+	border-right: 1px solid #e0e0e0;
+}
+#lk_header>div>div>div:nth-last-child(1){
+	border-right: 0px ;
+}
+#lk_header>div>div>div:nth-child(1) a{
+	position: relative;
+}
+#lk_header>div>div>div:nth-child(1) a img{
+	position: absolute;
+	left:-20%;
+	top:30px;
+	z-index: 999;
+	visibility: hidden;
+	opacity: 0;
+}
+#lk_header>div>div>div:nth-child(1) a:hover img{
+	transition: all .3s linear;
+	visibility: visible;
+	opacity: 1;
+}
+.navbar-lk{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0 100px;
+}
+.navbar-lk .navbar-brand img{
+  height: 70px;
+}
+.navbar-nav .nav-item{
+  margin-left: 30px;
+  height: 50px;
+}
+.navbar-nav .nav-item a{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav .nav-item a:hover{
+  border-bottom: 2px solid purple;
+ }
+/* 头部 end*/
+
+/* 轮播图 begin*/
+#lk_carousel .carousel-item{
+  background-size: cover;
+  background-position: center;
+}
+#lk_carousel .carousel-item img{
+  width: 100%;
+}
+@media screen and (min-width: 640px){
+  #lk_carousel .carousel-item{
+    height: 410px;
+  }
+
+}
+@media screen and (max-width: 640px){
+
+  .navbar-lk{
+    border-bottom: 1px solid #e0e0e0;
+    padding:0;
+  }
+}
+/* 轮播图 end*/
+
+/* 热门课程 begin*/
+#lk_hot{
+	/* background-color: pink; */
+}
+#lk_hot .media{
+  padding:20px 10px;
+  margin: 10px 0;
+  background-color: #f3f3f3;
+}
+#lk_hot .media img{
+  width: 80px;
+  border-radius: 40px;
+  border: 3px white double;
+}
+/* 热门课程 end*/
+
+/* 产品中心 begin*/
+#lk_products{
+  background-color: #f0f0f0;
+  padding: 20px 0px;
+  margin-top: 30px;
+}
+#lk_products ul{
+  border: none;
+}
+#lk_products .nav-item a{
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+}
+#lk_products .nav-item a:hover{
+  border: none;
+}
+#lk_products .nav-item a.active{
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid purple;
+  color: purple;
+}
+#lk_products .tab-content{
+  padding: 20px 0;
+}
+#lk_products .tab-content #part1 #left{
+  padding-top: 100px;
+}
+@media screen and (max-width: 760px){
+  #lk_products .tab-content #part1 #left{
+    padding-top: 20px;
+  }
+}
+#lk_products .tab-content #part1 #left-content1{
+  justify-content: flex-end;
+  color: #7c7a7a;
+}
+#lk_products .tab-content #part1 #left-content3 span{
+  color: orangered;
+}
+#lk_products .tab-content #part1 #left-content4 .btn-link{
+  color: rgb(87, 87, 87);
+  text-decoration: none;
+}
+#lk_products .tab-content #part1 #right img{
+  height: 500px;
+  width: auto;
+}
+#lk_products .tab-content #part2 #right h1{
+  color: purple;
+}
+#lk_products .tab-content #part2 #right p{
+  font-size: 20px;
+}
+
+/* 产品中心 end*/
+
+/* 关于我们 begin*/
+#lk_about #content-text{
+  color: #7c7a7a;
+}
+/* 关于我们 end*/
+
+/* 友情链接 begin*/
+#lk_link #content-img{
+}
+#lk_link #content-img img{
+  height: 40px;
+}
+/* 友情链接 end*/
+
+/* 底部 begin*/
+#lk_footer{
+  height: 170px;
+  background: url(../img/ft_bg.png) no-repeat center;
+  color: rgb(221, 221, 221);
+}
+#lk_footer a{
+  color: rgb(221, 221, 221);
+  text-decoration: none;
+}
+#lk_footer li{
+  margin-bottom: 3px;
+}
+#lk_footer .row{
+  height: 170px;
+}
+#lk_footer img{
+  width: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 760px){
+  #lk_footer{
+    height: 120px;
+  }
+  #lk_footer .row{
+    height: 120px;
+  }
+}
+/* 底部 end*/
+
